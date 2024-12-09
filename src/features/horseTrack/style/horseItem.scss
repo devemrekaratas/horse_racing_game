@@ -1,0 +1,33 @@
+.track-lane {
+    display: flex;
+    align-items: center;
+    font-size: 0.975rem;
+    border-bottom: 1px dashed #1B1833;
+}
+
+.position {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 100%;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    color: #fff;
+    background-color: #1B1833;
+}
+
+.lane {
+    position: relative;
+    flex: 2;
+}
+
+.background-name{
+    position: absolute;
+    opacity: .2;
+    font-weight: 600;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

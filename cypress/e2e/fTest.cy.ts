@@ -1,0 +1,16 @@
+describe('Horse Race Gaming Test', () => {
+  it('should generate program and start the race', () => {
+    cy.visit('http://localhost:5173/')
+    cy.contains('button', 'generate program').click()
+    cy.contains('button', 'start').click()
+    cy.wait(1000) 
+    cy.contains('button', 'pause').click()
+    cy.wait(1000)
+    cy.contains('button', 'start').click()
+    cy.wait(30000)
+    cy.get('[data-testid="result-container-1"]')
+    cy.contains('button', 'generate program').click()
+    cy.wait(1000)
+    cy.contains('button', 'generate program').click()
+  })
+})

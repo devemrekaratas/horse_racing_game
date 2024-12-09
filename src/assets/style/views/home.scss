@@ -1,0 +1,14 @@
+.app-wrapper {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem 0;
+    height: calc(100vh - 3rem);
+    overflow: auto;
+    background-color: #F7F9F2;
+}
+
+.program-result {
+    display: flex;
+    column-gap: 1rem;
+    flex: 35%;
+}
